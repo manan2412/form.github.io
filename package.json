@@ -1,0 +1,21 @@
+{
+  "name": "finalexammanan",
+  "version": "1.0.0",
+  "description": "Final Exam",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "connect-flash": "*",
+    "ejs": "*",
+    "express": "^4.17.2",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "^6.14.0",
+    "mongoose": "^6.1.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manan Shaileshbhai Patel",
+  "license": "ISC"
+}

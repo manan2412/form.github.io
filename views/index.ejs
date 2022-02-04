@@ -1,0 +1,40 @@
+<%- include('layouts/header')-%>
+
+    <body>
+        <div>
+            <form action="/formSuccess" method="post">
+            <u>Order Internet Plan</u><br>
+            <label for="name">Name:* </label>
+            <input type="text" name="name" id="name"><br>
+            <label for="phone">phone:* </label>
+            <input type="text" name="phone" id="phone"><br>
+            <label for="plan1">Plan 1: </label>
+            <input type="text" name="plan1" id="plan1"><br>
+            <label for="plan2">Plan 2: </label>
+            <input type="text" name="plan2" id="plan2"><br>
+            <label for="plan3">Plan 3: </label>
+            <input type="text" name="plan3" id="plan3"><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        </div>
+        <div>
+            <%
+            let i = 0;
+            
+              if(typeof(errors) != 'undefined'){
+                for(var error of errors){
+                  console.log(i);
+                %>
+                  <p class="errors"><%= error.msg %></p>
+                  
+                <%
+                i++;
+                }
+              }
+            %>
+        </div>
+    </body>
+
+
+    <%- include('layouts/footer')-%>

@@ -1,0 +1,37 @@
+<%- include('layouts/header')-%>
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Plan 1 Price</th>
+                <th>Plan 2 Price</th>
+                <th>Plan 3 Price</th>
+                <th>SubTotal</th>
+                <th>TaxPrice</th>
+                <th>Total</th>
+       
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var order of orders){ %>
+                <tr>
+                    <th><%= order.name %></th>
+                    <th><%= order.phone %></th>
+                    <th><%= order.plan1Price %></th>
+                    <th><%= order.plan2Price %></th>
+                    <th><%= order.plan3Price %></th>
+                    <th><%= order.subTotal%></th>
+                    <th><%= order.taxPrice %></th>
+                    <th><%= order.total %></th>
+                </tr>
+                <%
+            }
+            %>
+        </tbody>
+    </table>
+
+</main>
+
+<%- include('layouts/footer')-%>
